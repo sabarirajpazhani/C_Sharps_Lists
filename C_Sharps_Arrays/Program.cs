@@ -76,6 +76,15 @@ namespace C_Sharps_Arrays
             l.RemoveAt(2);
 
             l.ForEach(x => Console.WriteLine(x));
+
+            l.RemoveAll(x => x%2==0);
+            l.ForEach(x => Console.WriteLine(x));
+        }
+        public static void arrayToList()
+        {
+            int[] a = new int[5] { 1, 2, 3, 4, 5 };
+            List<int> l = new List<int>(a);
+            l.ForEach(x => Console.WriteLine(x));
         }
         static void Main(String [] args)
         {
@@ -84,7 +93,10 @@ namespace C_Sharps_Arrays
             //retriving();
             //insertElement();
             //containsMethod();
-            removeElements();
+            //removeElements();
+            arrayToList();
+
+
 
 
 
