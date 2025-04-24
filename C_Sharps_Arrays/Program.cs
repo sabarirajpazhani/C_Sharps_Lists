@@ -45,11 +45,25 @@ namespace C_Sharps_Arrays
 
             Console.WriteLine(l[3]);
         }
+        public static void insertElement()
+        {
+            List<char> ch = new List<char>();
+            ch.Add('d');
+            ch.Add('e');
+            ch.Add('r');
+            ch.Add('t');
+
+            ch.Insert(3, 's');
+            ch.InsertRange(3, new[] { 'q', 'o', 'p', 'd' });
+            ch.ForEach(x => Console.WriteLine(x));
+        }
         static void Main(String [] args)
         {
             CreatingList();
             addRange();
             retriving();
+            insertElement();
+
 
         }
     }
