@@ -69,13 +69,23 @@ namespace C_Sharps_Arrays
 
             Console.WriteLine(ch.Contains('d'));
         }
+        public static void removeElements()
+        {
+            List<int> l = new List<int>() { 1, 2, 3, 4 };
+            l.Remove(2);
+            l.RemoveAt(2);
+
+            l.ForEach(x => Console.WriteLine(x));
+        }
         static void Main(String [] args)
         {
             //CreatingList();
             //addRange();
             //retriving();
             //insertElement();
-            containsMethod();
+            //containsMethod();
+            removeElements();
+
 
 
         }
