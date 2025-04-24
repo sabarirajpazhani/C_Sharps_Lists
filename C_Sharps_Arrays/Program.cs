@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
@@ -57,12 +58,24 @@ namespace C_Sharps_Arrays
             ch.InsertRange(3, new[] { 'q', 'o', 'p', 'd' });
             ch.ForEach(x => Console.WriteLine(x));
         }
+
+        public static void containsMethod()
+        {
+            List<char> ch = new List<char>();
+            ch.Add('d');
+            ch.Add('e');
+            ch.Add('r');
+            ch.Add('t');
+
+            Console.WriteLine(ch.Contains('d'));
+        }
         static void Main(String [] args)
         {
-            CreatingList();
-            addRange();
-            retriving();
-            insertElement();
+            //CreatingList();
+            //addRange();
+            //retriving();
+            //insertElement();
+            containsMethod();
 
 
         }
